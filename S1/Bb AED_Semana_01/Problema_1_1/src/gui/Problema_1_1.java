@@ -5,6 +5,9 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import semana_01.Docente;
+
 import javax.swing.JButton;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
@@ -69,9 +72,28 @@ public class Problema_1_1 extends JFrame implements ActionListener {
 		}
 	}
 	protected void actionPerformedBtnProcesar(ActionEvent arg0) {
-		
+		//Declare y cree un objeto de tipo Docente.
+		Docente d=new Docente();
+		//Ingrese datos fijos.
+		d.codigo=1;
+		d.horas=5;
+		d.nombre="Juan";
+		d.tarifa=10.50;
+		double sb, des, sn;
+		sb=d.sueldobru();
+		des=d.descuento(sb);
+		sn=d.sueldoneto(sb, des);
+		//Visualice todos sus datos.
+		imprimir("  BOLETA DE PAGO");
+		imprimir("CÃ³digo  : "+"\t" +d.codigo);
+		imprimir("Nombre  : "+"\t" +d.nombre);
+		imprimir("Horas  : "+"\t" +d.horas);
+		imprimir("Tarifa  : "+"\t" +d.tarifa);
+		imprimir("Sueldo bÃ¡sico  : "+"\t" +sb);
+		imprimir("Descuento: "+"\t" +des);
+		imprimir("Sueldo neto  : "+"\t" +sn);
 	}
-	//  Métodos tipo void (con parámetros)
+	//  Mï¿½todos tipo void (con parï¿½metros)
 	void imprimir(String s) {
 		txtS.append(s + "\n");
 	}

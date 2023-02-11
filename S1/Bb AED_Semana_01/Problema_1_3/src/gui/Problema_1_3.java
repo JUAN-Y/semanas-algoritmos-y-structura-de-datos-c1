@@ -5,6 +5,9 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import semana_01.Persona;
+
 import javax.swing.JButton;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
@@ -69,9 +72,26 @@ public class Problema_1_3 extends JFrame implements ActionListener {
 		}
 	}
 	protected void actionPerformedBtnProcesar(ActionEvent arg0) {
-		
-	}
-	//  Métodos tipo void (con parámetros)
+		//Declare y cree un objeto de tipo Coordinador.
+		Persona per=new Persona();
+		//Ingrese datos fijos.
+		per.altura=1.60;
+		per.apellidos="CÃ³rdova";
+		per.edad=50;
+		per.nombre="Julio";
+		per.peso=60;
+		String est=per.estado();
+		double imc=per.imc();
+		//Visualice todos sus datos.
+		imprimir(" CALCULO IMC");
+		imprimir("Nombre:" +"\t"+"\t"+per.nombre);
+		imprimir("Apellidos:" +"\t"+per.apellidos);
+		imprimir("Edad:" +"\t"+"\t"+per.edad);
+		imprimir("Peso:" +"\t"+"\t"+per.peso);
+		imprimir("Estado:" +"\t"+"\t"+est);
+		imprimir("IMC:" +"\t"+"\t"+imc);
+		}
+	//  Mï¿½todos tipo void (con parï¿½metros)
 	void imprimir(String s) {
 		txtS.append(s + "\n");
 	}

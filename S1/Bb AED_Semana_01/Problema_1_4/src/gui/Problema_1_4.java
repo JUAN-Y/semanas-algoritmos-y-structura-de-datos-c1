@@ -5,6 +5,9 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import semana_01.Coordinador;
+
 import javax.swing.JButton;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
@@ -69,9 +72,23 @@ public class Problema_1_4 extends JFrame implements ActionListener {
 		}
 	}
 	protected void actionPerformedBtnProcesar(ActionEvent arg0) {
-		
+		//Declare y cree un objeto de tipo Coordinador.
+		Coordinador a=new Coordinador();
+		//Ingrese datos fijos.
+		a.nombre="Juan";
+		a.codigo=123;
+		a.celular=123456789;
+		a.categoria=0;
+		double m=a.sueldo();
+		//Visualice todos sus datos.
+		imprimir(" DATOS DE SALIDA");
+		imprimir("NOMBRE:" +"\t"+"\t"+a.nombre);
+		imprimir("CODIGO:" +"\t"+"\t"+a.codigo);
+		imprimir("CELULAR:" +"\t"+a.celular);
+		imprimir("CATEGORIA:" +"\t"+a.categoria);
+		imprimir("SUELDO:" +"\t"+"\t"+m);
 	}
-	//  Métodos tipo void (con parámetros)
+	//  Mï¿½todos tipo void (con parï¿½metros)
 	void imprimir(String s) {
 		txtS.append(s + "\n");
 	}

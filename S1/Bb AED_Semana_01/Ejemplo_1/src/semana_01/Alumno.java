@@ -2,10 +2,10 @@ package semana_01;
 
 public class Alumno {
 	
-	//  Atributos públicos
+	//  Atributos pï¿½blicos
 	public int codigo, nota1, nota2;
 	public String nombre;
-	//  Operaciones públicas
+	//  Operaciones pï¿½blicas
 	public double promedio() {
 		return (nota1 + nota2) / 2.0;
 	}

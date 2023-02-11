@@ -5,6 +5,9 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import semana_01.Filmacion;
+
 import javax.swing.JButton;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
@@ -69,9 +72,23 @@ public class Problema_1_2 extends JFrame implements ActionListener {
 		}
 	}
 	protected void actionPerformedBtnProcesar(ActionEvent arg0) {
-		
+		//Declare y cree un objeto de tipo Filmacion.
+		Filmacion conv=new Filmacion();
+		//Ingrese datos fijos.
+		conv.codigo=123;
+		conv.duracion=20;
+		conv.precios=10.5;
+		conv.titulo="Avatar";
+		double pd=conv.preciodolar();
+		//visualice todos sus datos.
+		imprimir(" videos");
+		imprimir("CÃ³digo:" +"\t"+"\t"+conv.codigo);
+		imprimir("Titulo:" +"\t"+"\t"+conv.titulo);
+		imprimir("DuraciÃ³n:" +"\t"+conv.duracion);
+		imprimir("Precio S/.:" +"\t"+conv.precios);
+		imprimir("Precio $/.:" +"\t"+pd);
 	}
-	//  Métodos tipo void (con parámetros)
+	//  Mï¿½todos tipo void (con parï¿½metros)
 	void imprimir(String s) {
 		txtS.append(s + "\n");
 	}

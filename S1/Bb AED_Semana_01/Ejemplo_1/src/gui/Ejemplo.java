@@ -71,11 +71,15 @@ public class Ejemplo extends JFrame implements ActionListener {
 		}
 	}
 	protected void actionPerformedBtnProcesar(ActionEvent arg0) {
+		//1 declarar y crear el obejeto a de la clase Alumno
 		Alumno a = new Alumno();
+		//2 asignamos valores fijos a los atributos del objeto
 		a.codigo = 12345;
 		a.nombre = "Juan";
 		a.nota1 = 13;
+		//objeto a atributo nota2 asigno el valor 15
 		a.nota2 = 15;
+		//3 mostramos resultados
 		
 		imprimir("DirMem   :  " + a);
 		imprimir("c�digo   :  " + a.codigo);
