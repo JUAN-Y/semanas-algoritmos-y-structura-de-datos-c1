@@ -44,7 +44,7 @@ public class Ejemplo extends JFrame implements ActionListener {
 	 * Create the frame.
 	 */
 	public Ejemplo() {
-		setTitle("Ejemplo - Semana_01");
+		setTitle("Ejemplo - Semana_01 Prueba");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 500);
 		contentPane = new JPanel();
@@ -78,14 +78,14 @@ public class Ejemplo extends JFrame implements ActionListener {
 		a.nota2 = 15;
 		
 		imprimir("DirMem   :  " + a);
-		imprimir("código   :  " + a.codigo);
+		imprimir("cï¿½digo   :  " + a.codigo);
 		imprimir("nombre   :  " + a.nombre);
 		imprimir("nota 1   :  " + a.nota1);
 		imprimir("nota 2   :  " + a.nota2);
 		imprimir("promedio :  " + a.promedio());
 		imprimir("");
 	}
-	//  Métodos tipo void (con parámetros)
+	//  Mï¿½todos tipo void (con parï¿½metros)
 	void imprimir(String s) {
 		txtS.append(s + "\n");
 	}
