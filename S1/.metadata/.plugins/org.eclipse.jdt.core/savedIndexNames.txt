@@ -1,0 +1,13 @@
+INDEX VERSION 1.131+C:\Users\jdj_y\Desktop\Ciclo 2\ALGORITMOS Y ESTRUCTURA DE DATOS\S1\.metadata\.plugins\org.eclipse.jdt.core
+3233860308.index
+14526675.index
+2257547329.index
+2523538723.index
+1506384750.index
+785296376.index
+2963947099.index
+1753289069.index
+528884219.index
+2179118168.index
+4142236878.index
+1865797976.index
