@@ -44,7 +44,7 @@ public class Ejemplo extends JFrame implements ActionListener {
 	 * Create the frame.
 	 */
 	public Ejemplo() {
-		setTitle("Ejemplo - Semana_01 Prueba");
+		setTitle("Ejemplo - Semana_01 Prueba 1");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 500);
 		contentPane = new JPanel();
